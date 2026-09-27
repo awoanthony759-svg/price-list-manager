@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Price List Manager - Smart and simple product price management."
+    >
+
+    <meta name="theme-color" content="#0f172a">
+
+    <title>Price List Manager</title>
+
+    <!-- Favicon / Logo -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logo.png"
+    >
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="brand">
+
+            <img
+                src="images/logo.png"
+                alt="Price List Manager Logo"
+                class="brand-logo"
+            >
+
+            <span>Price List Manager</span>
+
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+
+        <nav id="mainNav">
+
+            <a href="#home">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#login">User Login</a>
+
+            <a href="#admin-login">Admin Login</a>
+
+            <a
+                href="#register"
+                class="nav-register"
+            >
+                Register
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            SMART PRICE MANAGEMENT
+        </div>
+
+
+        <h1>
+            Smart Price Management.
+            <span>Made Simple.</span>
+        </h1>
+
+
+        <p>
+            Manage products, prices and categories from one
+            beautiful and easy-to-use dashboard.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#login"
+                class="btn btn-primary"
+            >
+                User Login
+            </a>
+
+
+            <a
+                href="#register"
+                class="btn btn-light"
+            >
+                Get Started / Register
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES
+===================================================== -->
+
+<section
+    id="features"
+    class="section features-section"
+>
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            FEATURES
+        </span>
+
+        <h2>
+            Everything you need to manage your prices
+        </h2>
+
+        <p>
+            Keep your products organized and your prices
+            easy to find and update.
+        </p>
+
+    </div>
+
+
+    <div class="features-grid">
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                📦
+            </div>
+
+            <h3>
+                Product Management
+            </h3>
+
+            <p>
+                Add, edit and delete products with ease.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🔎
+            </div>
+
+            <h3>
+                Smart Search
+            </h3>
+
+            <p>
+                Quickly find products and prices.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>
+                Categories
+            </h3>
+
+            <p>
+                Organize products into useful categories.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                💾
+            </div>
+
+            <h3>
+                Save Your Data
+            </h3>
+
+            <p>
+                Product information is stored in your browser.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     USER LOGIN
+===================================================== -->
+
+<section
+    id="login"
+    class="auth-section user-auth"
+>
+
+    <div class="auth-background"></div>
+
+    <div class="auth-card">
+
+        <div class="auth-header">
+
+            <span class="section-label">
+                USER ACCOUNT
+            </span>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Login to access your price list.
+            </p>
+
+        </div>
+
+
+        <form id="loginForm">
+
+            <div class="form-group">
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-options">
+
+                <label class="remember">
+
+                    <input
+                        type="checkbox"
+                        id="rememberMe"
+                    >
+
+                    <span>
+                        Remember Me
+                    </span>
+
+                </label>
+
+
+                <a
+                    href="#"
+                    id="forgotPassword"
+                >
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary full-width"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <div class="auth-footer">
+
+            Don't have an account?
+
+            <a href="#register">
+                Register / Sign Up
+            </a>
+
+        </div>
+
+
+        <div class="admin-link">
+
+            <a href="#admin-login">
+                Login as Administrator →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ADMIN LOGIN
+===================================================== -->
+
+<section
+    id="admin-login"
+    class="auth-section admin-auth"
+>
+
+    <div class="auth-background admin-background"></div>
+
+    <div class="auth-card admin-card">
+
+        <div class="auth-header">
+
+            <span class="section-label admin-label">
+                ADMINISTRATION
+            </span>
+
+            <h2>
+                Administrator Login
+            </h2>
+
+            <p>
+                Authorized administrator access only.
+            </p>
+
+        </div>
+
+
+        <form id="adminLoginForm">
+
+            <div class="form-group">
+
+                <label for="adminEmail">
+                    Admin Email
+                </label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Enter administrator email"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="adminPassword">
+                    Admin Password
+                </label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter administrator password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary full-width"
+            >
+                Admin Login
+            </button>
+
+        </form>
+
+
+        <div class="auth-footer">
+
+            <a href="#login">
+                ← Back to User Login
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     REGISTER
+===================================================== -->
+
+<section
+    id="register"
+    class="auth-section register-auth"
+>
+
+    <div class="auth-background register-background"></div>
+
+    <div class="auth-card">
+
+        <div class="auth-header">
+
+            <span class="section-label">
+                CREATE ACCOUNT
+            </span>
+
+            <h2>
+                Create Your Account
+            </h2>
+
+            <p>
+                Register to manage your products and prices.
+            </p>
+
+        </div>
+
+
+        <form id="registerForm">
+
+            <div class="form-group">
+
+                <label for="registerName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    autocomplete="new-password"
+                    minlength="6"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary full-width"
+            >
+                Create Account
+            </button>
+
+        </form>
+
+
+        <div class="auth-footer">
+
+            Already have an account?
+
+            <a href="#login">
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<section
+    id="dashboard"
+    class="dashboard"
+>
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <span class="section-label">
+                DASHBOARD
+            </span>
+
+            <h2>
+                Product Price List
+            </h2>
+
+            <p>
+                Manage your products, categories and prices.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            id="logoutBtn"
+            class="btn btn-secondary"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+    <div class="dashboard-controls">
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+
+        </div>
+
+
+        <select
+            id="categoryFilter"
+            aria-label="Filter products by category"
+        >
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Food">
+                Food
+            </option>
+
+            <option value="Drinks">
+                Drinks
+            </option>
+
+            <option value="Electronics">
+                Electronics
+            </option>
+
+            <option value="Clothing">
+                Clothing
+            </option>
+
+            <option value="Other">
+                Other
+            </option>
+
+        </select>
+
+
+        <button
+            type="button"
+            id="addItemBtn"
+            class="btn btn-primary"
+        >
+            + Add Item
+        </button>
+
+    </div>
+
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Product
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Price
+                    </th>
+
+                    <th>
+                        Actions
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="productTableBody"></tbody>
+
+        </table>
+
+
+        <div
+            id="emptyMessage"
+            class="empty-message"
+        >
+            No products found.
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     PRODUCT MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="productModal"
+    aria-hidden="true"
+>
+
+    <div class="modal-content">
+
+        <button
+            type="button"
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <h2 id="modalTitle">
+            Add Product
+        </h2>
+
+
+        <form id="productForm">
+
+            <div class="form-group">
+
+                <label for="productName">
+                    Product Name
+                </label>
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Example: Coca Cola"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="productCategory">
+                    Category
+                </label>
+
+                <select
+                    id="productCategory"
+                    required
+                >
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option value="Food">
+                        Food
+                    </option>
+
+                    <option value="Drinks">
+                        Drinks
+                    </option>
+
+                    <option value="Electronics">
+                        Electronics
+                    </option>
+
+                    <option value="Clothing">
+                        Clothing
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="productPrice">
+                    Price (₦)
+                </label>
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="0.00"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary full-width"
+            >
+                Save Product
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Price List Manager. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
